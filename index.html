@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Echo Step</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="ui">
+    <div id="level-counter">Level 1</div>
+    <div id="hints">
+      <div id="controls">Arrows: Move/Jump • E: Echo • R: Restart</div>
+      <div id="echo-info">Echoes: <span id="echo-count">0</span>/3 <span id="echo-block-icon" class="hidden">!</span></div>
+    </div>
+  </div>
+
+  <canvas id="game" width="960" height="480"></canvas>
+
+  <!-- Overlays kept hidden (non-interactive) -->
+  <div id="overlay-root" style="display:none;">
+    <div id="main-menu" class="overlay hidden"></div>
+    <div id="pause-menu" class="overlay hidden"></div>
+    <div id="level-complete" class="overlay hidden"></div>
+    <div id="you-win" class="overlay hidden"></div>
+    <div id="fade-layer" class="fade hidden"></div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>

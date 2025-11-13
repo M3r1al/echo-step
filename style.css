@@ -1,0 +1,24 @@
+:root{
+  --bg:#0f1418;
+  --panel:#111517;
+  --accent:#48c0ff;
+  --muted:#98a0aa;
+  --neon-blue: #48c0ff;
+  --neon-dark: #0b1420;
+  --player-body: #ff9a2e;
+  --player-outline: #ffffff;
+  --echo-glow: rgba(80,200,255,0.18);
+}
+*{box-sizing:border-box;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+body{margin:0;background:linear-gradient(180deg,var(--bg),#061018);color:#e8f6ff;display:flex;flex-direction:column;align-items:center;min-height:100vh}
+#ui{width:960px;max-width:95%;margin:14px 0;text-align:left; position: relative;}
+#level-counter{font-weight:700;font-size:18px;color:#cfefff; padding-left:6px;}
+canvas{background:linear-gradient(180deg,#071427,#041026);border:1px solid rgba(255,255,255,0.04);image-rendering:pixelated}
+.overlay { pointer-events: none; user-select: none; position: absolute; left: 50%; transform: translateX(-50%); top: 80px; color: #fff; }
+/* Hide any other UI text elements that may exist in DOM */
+#title, #instructions, #status { display: none !important; }
+#hints { position: absolute; left: 120px; top: 0; color: #cfefff; font-size:13px; display:flex; gap:12px; align-items:center; }
+#controls { opacity:0.9; }
+#echo-info { font-weight:700; color:#98f0ff; display:flex; align-items:center; gap:8px; }
+#echo-block-icon { display:inline-block; width:18px;height:18px;border-radius:50%;background:#ff5555;color:#111;font-weight:900;text-align:center;line-height:18px; }
+.hidden{ display:none !important; }
